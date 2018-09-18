@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <center>
+            <h1>Student Details</h1>
+            <table class="table">
+                <tr>
+                    <th>Index No</th>
+                    <th>FName</th>
+                    <th>LName</th>
+                    <th>Tel</th>
+                </tr>
+                <tbody>
+                    {{#each result}}
+                    <tr><td>{{this.IndexNo}}</td><td>{{this.Fname}}</td><td>{{this.Lname}}</td><td>{{this.Tel}}</td></tr>
+                </tbody>
+            </table>
+        </center>
+
+    </body>
+</html>
